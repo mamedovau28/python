@@ -6,5 +6,7 @@ while True:
     if len(words) == 0:
         break
 my_file.close()
-sum_str = sum(1 for line in open('DZ-2.txt', 'rt'))
+my_file2 = open('DZ-2.txt', 'rt')
+sum_str = sum(1 for line in my_file2)
 print('Количество строк :', sum_str)
+my_file2.close()
